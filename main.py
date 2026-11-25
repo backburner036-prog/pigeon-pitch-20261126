@@ -21,7 +21,12 @@ Why each word was chosen (per the screening analysis in
 
 from pathlib import Path
 
-TEXT = "Seed round, literally: give us $2M in breadcrumbs and we'll own last-mile delivery — 4,000 years of urban experience, zero salaries, wings included."
+# Entry text, built from two parts (kept byte-identical to the approved
+# 148-char entry — do not change any word, punctuation, or spacing).
+PART_1 = "Seed round, literally: give us $2M in breadcrumbs and we'll own last-mile delivery — "
+PART_2 = "4,000 years of urban experience, zero salaries, wings included."
+
+TEXT = PART_1 + PART_2
 
 OUT = Path("/output/entry.txt")
 
